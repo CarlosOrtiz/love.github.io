@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    text-align: center;
+}
+
+.sunflower {
+    width: 200px;
+    height: 200px;
+    background: url('https://res.cloudinary.com/dqexdxsm1/image/upload/v1697419210/love.jpg') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
