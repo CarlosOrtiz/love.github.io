@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f8f8f8;
+    background-color: #ffe6b3;
 }
 
 .container {
@@ -12,14 +12,43 @@ body {
 }
 
 .sunflower {
+    position: relative;
     width: 200px;
     height: 200px;
-    background: url('https://res.cloudinary.com/dqexdxsm1/image/upload/v1697419210/love.jpg') no-repeat center center;
+    background: url('https://example.com/girasol.png') no-repeat center center;
     background-size: cover;
-    margin-bottom: 20px; /* Ajusta según sea necesario */
 }
 
-input {
-    padding: 10px;
-    font-size: 16px;
+.petal {
+    position: absolute;
+    width: 40px;
+    height: 120px;
+    background-color: #ffcc66;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform-origin: 50% 80%;
+}
+
+.petal:nth-child(2) { transform: rotate(60deg); }
+.petal:nth-child(3) { transform: rotate(120deg); }
+.petal:nth-child(4) { transform: rotate(180deg); }
+.petal:nth-child(5) { transform: rotate(240deg); }
+.petal:nth-child(6) { transform: rotate(300deg); }
+
+.center {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff9900;
+    border-radius: 50%;
+    left: 80px;
+    top: 80px;
+}
+
+#mensaje {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
 }
