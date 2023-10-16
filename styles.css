@@ -15,8 +15,9 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
-    background: url('https://example.com/girasol.png') no-repeat center center;
-    background-size: cover;
+    background: url('https://res.cloudinary.com/dqexdxsm1/image/upload/v1697419210/love.jpg') no-repeat center center;
+    background-size: contain; /* Usar 'contain' para centrar y mantener la proporción de la imagen */
+    margin: auto; /* Centrar horizontalmente */
 }
 
 .petal {
@@ -33,6 +34,7 @@ body {
 .petal:nth-child(4) { transform: rotate(180deg); }
 .petal:nth-child(5) { transform: rotate(240deg); }
 .petal:nth-child(6) { transform: rotate(300deg); }
+.petal:nth-child(7) { transform: rotate(360deg); }
 
 .center {
     position: absolute;
